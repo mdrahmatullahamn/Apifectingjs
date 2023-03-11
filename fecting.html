@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #products{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: 5px solid red;
+        }
+        #products>div{
+            width: 23%;
+            height: 200px;
+            border: 1px solid black;
+            font-size: 8px;
+            /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */
+        }
+        #products>div>img{
+            width: 70%;
+            margin-left: 15%;
+            height: 50%;
+        }
+        #products>div>h1{
+            margin-left: 8px;
+            color: blue;
+            /* text-shadow: 10px; */
+            
+        }
+        .v10 >h1{
+            font-family: verdana;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>fecting data</h1>
-    <button onclick="dataFetching()" >start to fecting</button>
+
+    <div class="v10">  
+          <h1>fecting data</h1>
+        </div>
+
+    <button onclick="dataFetching()">start to</button>
     <div id="products">
 
     </div>
